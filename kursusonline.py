@@ -1,6 +1,6 @@
 from typing import cast
 import streamlit as st
-from streamlit_option_menu import option_menu 
+import option_menu 
 from PIL  import Image 
 
 #1. as sidebar menu 
