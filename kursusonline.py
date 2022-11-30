@@ -1,6 +1,6 @@
 from typing import cast
 import streamlit as st
-import option_menu 
+from streamlit_option_menu import option_menu
 from PIL  import Image 
 
 #1. as sidebar menu 
@@ -8,8 +8,7 @@ with st.sidebar:
     choose=option_menu("Menu Utama", ["House", "Tentor", "Registrasi", "Contact", "Payment"],
         icons=["Star", "Moon", "", ""],
     )
-
-if choose == "House":
+if choose == "House": 
     col1, col2, col3 = st.columns(3)  
     with col1: 
         st.title("King Teach Tutor📚📝")
